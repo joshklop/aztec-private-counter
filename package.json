@@ -1,0 +1,17 @@
+{
+  "name": "aztec-private-counter",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "license": "ISC",
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "build-artifacts": "pnpm recursive run --filter \"@aztec-private-counter/aztec-artifacts\" build",
+    "clean": "pnpm recursive run clean ; rm -rf node_modules/*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
